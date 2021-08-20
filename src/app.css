@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.featuredTitle {
+    font-size: 20px;
+
+}
+
+.featuredDescriptionContainer {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.featuredDescription {
+    font-size: 20px;
+    font-weight: 300;
+}
