@@ -28,6 +28,11 @@ export default function Home() {
                     // console.log(date)
                     let obj = {...value[0]}
                     obj.date = date
+                    // Curva para non mineral soils (sustratos que tienen aire como potting soils)
+                    //obj.value_in_m3m3 = 5.439e-10 * value[0].rawHumidity**3 - 2.731e-6 * value[0].rawHumidity**2 + 4.868e-3 * value[0].rawHumidity - 2.683
+                    // Curva para mineral soils (sustratos mayormente tierra)
+                    obj.value_in_m3m3 = 4.824e-10 * value[0].rawHumidity**3 - 2.278e-6 * value[0].rawHumidity**2 + 3.898e-3 * value[0].rawHumidity - 2.154
+                    console.log(value[0].rawHumidity, obj.value_in_m3m3)
                     tempArray.push(obj);
                 }
                 // console.log("temp array", tempArray)
