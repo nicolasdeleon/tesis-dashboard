@@ -17,7 +17,7 @@ export default function Home() {
       // This way we get sensorData updated every 15s
         const getSensorData = async () => {
             const dbRef = firebase.database().ref();
-            await dbRef.child("testing-gateway-bsas").child("eui-70b3d57ed0043cf5").limitToLast(10).get().then((snapshot) => {
+            await dbRef.child("testing-gateway-bsas").child("eui-70b3d57ed0043cf5").limitToLast(200).get().then((snapshot) => {
             if (snapshot.exists()) {
                 // console.log("Setting sensor data to component");
                 // console.log(snapshot.val());
