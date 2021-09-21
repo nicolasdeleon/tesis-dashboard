@@ -8,10 +8,10 @@ export default function Chart({title, data, dataKey, grid}) {
     return (
         <div className="chart">
             <h3 className="chartTitle">{title}</h3>
-            <ResponsiveContainer width="100%" aspect={4 / 1}>
+            <ResponsiveContainer width="100%" aspect={3.5 / 1}>
                 <LineChart data={data}>
-                    <XAxis dataKey="date" stroke="#5550bd"/>
-                    <Line type="monotone" dataKey="value_in_m3m3" stroke="#5550bd" scale="scale"/>
+                    <XAxis dataKey="dates" stroke="#D3D3D3"/>
+                    <Line type="monotone" dataKey="value_in_m3m3" stroke="#5550bd" scale="scale1" dot={false}/>
                     <CartesianGrid />
                     <XAxis type="date" dataKey="time">
                       <Label
@@ -20,9 +20,11 @@ export default function Chart({title, data, dataKey, grid}) {
                         style={{ textAnchor: "middle" }}
                       />
                     </XAxis>
-                    <YAxis domain={[0, 1]}>
+                    <YAxis domain={[0.05, 0.75]}>
                       <Label
                         value={"Volumetric Water Content m³/m³"}
+                        scaleToFit={true}
+                        dx={8}
                         position="left"
                         angle={-90}
                         style={{ textAnchor: "middle" }}
