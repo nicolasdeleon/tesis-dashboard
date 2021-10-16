@@ -18,28 +18,28 @@ export default function Widget() {
                 </tr>
                 <tr className="widgetTr">
                     <td className="widgetDevice">
-                        <span className="widgetId">asdffAF124asd23as</span>
+                        <span className="widgetId">eui-70b3d57ed0043cf5</span>
                     </td>
                     <td className="widgetDate"> 20/08/2021 - 17:52</td>
                     <td className="widgetStatus"><Button type="Online"/></td>
                 </tr>
                 <tr className="widgetTr">
                     <td className="widgetDevice">
-                        <span className="widgetId">hkgn12455nq9d12n4r</span>
+                        <span className="widgetId">eui-hkgn12455nq9d12n4r</span>
                     </td>
                     <td className="widgetDate"> 20/08/2021 - 17:52</td>
                     <td className="widgetStatus"><Button type="Offline"/></td>
                 </tr>
                 <tr className="widgetTr">
                     <td className="widgetDevice">
-                        <span className="widgetId">klhg034jnc13n00c9</span>
+                        <span className="widgetId"eui->klhg034jnc13n00c9</span>
                     </td>
                     <td className="widgetDate"> 20/08/2021 - 17:52</td>
                     <td className="widgetStatus"><Button type="Repair"/></td>
                 </tr>
                 <tr className="widgetTr">
                     <td className="widgetDevice">
-                        <span className="widgetId">tefdv93mdc0321md0m</span>
+                        <span className="widgetId">eui-tefdv93mdc0321md0m</span>
                     </td>
                     <td className="widgetDate"> 20/08/2021 - 17:52</td>
                     <td className="widgetStatus"><Button type="Maintenance"/></td>
