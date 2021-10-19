@@ -98,7 +98,7 @@ export default function CustomChart({title, data, dataKey, grid, umbralSeco, umb
           rotate: -90
         },
         min: -0.05,
-        max: 0.30,
+        max: 0.45,
         decimalsInFloat: 3
       }
     }
