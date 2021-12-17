@@ -95,6 +95,22 @@ export default function Home() {
             {sensorData && 
                 <div>
                 <CustomChart data={sensorData} title="Device Data" grid umbralSeco={umbralSeco} umbralHumedo={umbralHumedo}/>
+                <form>
+                <div className="form">
+                    <div className="configUmbral">
+                        <p>Configurar Umbral de Escasa Humedad</p>
+                        <label>
+                            <input type="text" value={umbralSeco} onChange={e => setUmbralSeco(e.target.value)} />
+                        </label>
+                    </div>
+                    <div className="configUmbral">
+                        <p>Configurar Umbral de Excesiva Humedad</p>
+                        <label>
+                        <input type="text" value={umbralHumedo} onChange={e => setUmbralHumedo(e.target.value)} />
+                        </label>
+                    </div>
+                </div>
+              </form>  
                 </div>}
             <Widget/>
         </div>

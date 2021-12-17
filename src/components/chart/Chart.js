@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './chart.css'
 import Chart from "react-apexcharts";
 
@@ -101,6 +101,10 @@ export default function CustomChart({title, data, dataKey, grid, umbralSeco, umb
         max: 0.45,
         decimalsInFloat: 3
       }
+    }
+
+    function handleChange(event) {
+      this.setState({value: event.target.value});
     }
 
     return (
